@@ -18,6 +18,7 @@ get-debloated-pkgs --add-common --prefer-nano
 # If the application needs to be manually built that has to be done down here
 echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
-wget https://zsnes.com/files/SuperZSNES_v0.110.tar.gz
-
 mkdir -p ./AppDir/bin
+wget https://zsnes.com/files/SuperZSNES_v0.110.tar.gz
+tar -xvf SuperZSNES_v0.110.tar.gz -C ./AppDir/bin
+rm -f ./*.tar.gz ./AppDir/bin/libdecor*.so*
