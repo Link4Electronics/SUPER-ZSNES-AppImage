@@ -19,7 +19,7 @@ get-debloated-pkgs --add-common --prefer-nano
 echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
 mkdir -p ./AppDir/bin
-wget https://zsnes.com/files/SuperZSNES_v0.110.tar.gz
-tar -xvf SuperZSNES_v0.110.tar.gz -C ./AppDir/bin
+wget https://zsnes.com/files/SuperZSNES_v0.200.tar.gz
+tar -xvf SuperZSNES*.tar.gz -C ./AppDir/bin
 rm -f ./*.tar.gz ./AppDir/bin/libdecor*.so*
 mv -v ./AppDir/bin/UnityPlayer.so /usr/lib
