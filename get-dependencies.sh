@@ -16,10 +16,10 @@ get-debloated-pkgs --add-common --prefer-nano
 #make-aur-package PACKAGENAME
 
 # If the application needs to be manually built that has to be done down here
-echo "Installing debloated packages..."
+echo "Getting app..."
 echo "---------------------------------------------------------------"
 mkdir -p ./AppDir/bin
-wget https://zsnes.com/files/SuperZSNES_v0.200.tar.gz
+wget https://zsnes.com/files/SuperZSNES_v0.201.tar.gz
 tar -xvf SuperZSNES*.tar.gz -C ./AppDir/bin
 rm -f ./*.tar.gz ./AppDir/bin/libdecor*.so*
 mv -v ./AppDir/bin/UnityPlayer.so /usr/lib
